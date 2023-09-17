@@ -1,1 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#fff ;
+}
+.wrapper {
+    max-width: 1100px;
+    height: 700px;
+    background: rgb(33, 33, 34);
+    border: 2px solid #000;
+}
+.position {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+.slides {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+.navi {
+    position: absolute;
+    bottom: 36px;
+    left: 57%;
+    display: flex;
+}
+.btn {
+    height: 15px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background-color: #fff;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.btn:hover {
+    opacity: 1;
+    border: 2px solid #fff;
+    background-color:  rgb(33, 33, 34);
+    border-radius: 10px;
+}
+input[name="rbt"] {
+    position: absolute;
+    visibility: hidden;
+}
+.box {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+}
 
+.box {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide {
+    width: 25%;
+    transition: all 1s ease;
+}
+#rbt1:checked ~ .s1 {
+    margin-left: 0;
+}
+#rbt2:checked ~ .s1 {
+    margin-left: -25%;
+}
+#rbt3:checked ~ .s1 {
+    margin-left: -50%;
+}
+#rbt4:checked ~ .s1 {
+    margin-left: -75%;
+}
+.text {
+    font-family: Inter;
+    font-size: 20px;
+    color: #fff;
+    font-style: normal;
+    position: absolute;
+    bottom: 40px;
+    visibility: hidden;
+}
+#rbt1:checked ~ .t1 {
+    visibility: visible;
+}
+#rbt2:checked ~ .t2 {
+    visibility: visible;
+}
+#rbt3:checked ~ .t3 {
+    visibility: visible;
+}
+#rbt4:checked ~ .t4 {
+    visibility: visible;
+}
