@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#fff ;
+}
+.wrapper {
+    max-width: 1100px;
+    height: 740px;
+    background: rgb(33, 33, 34);
+    border: 2px solid #000;
+}
+.position {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+}
+.slides {
+    margin-top: 40px;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+.btn1 {
+    position: absolute;
+    top: 680px;
+    left: 59%;
+    display: flex;
+    height: 15px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #f10808;
+    background-color: #f10808;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.btn1:hover {
+    opacity: 1;
+    border: 2px solid #fff;
+    background-color:  #fff;
+    border-radius: 10px;
+}
+
+.btn2 {
+    position: absolute;
+    top: 680px;
+    left: 64%;
+    display: flex;
+    height: 15px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #f10808;
+    background-color: #f10808;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.btn2:hover {
+    opacity: 1;
+    border: 2px solid #fff;
+    background-color:  #fff;
+    border-radius: 10px;
+}
+
+.btn3 {
+    position: absolute;
+    top: 680px;
+    left: 69%;
+    display: flex;
+    height: 15px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #f10808;
+    background-color: #f10808;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.btn3:hover {
+    opacity: 1;
+    border: 2px solid #fff;
+    background-color:  #fff;
+    border-radius: 10px;
+}
+
+.btn4 {
+    position: absolute;
+    top: 680px;
+    left: 74%;
+    display: flex;
+    height: 15px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #f10808;
+    background-color: #f10808;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.btn4:hover {
+    opacity: 1;
+    border: 2px solid #fff;
+    background-color:  #fff;
+    border-radius: 10px;
+}
+
+input[name="rbt"] {
+    position: absolute;
+    visibility: hidden;
+}
+.box {
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.box {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.slide {
+    width: 25%;
+    transition: all 1s ease;
+}
+#rbt1:checked ~ .s1 {
+    margin-left: 0;
+}
+#rbt2:checked ~ .s1 {
+    margin-left: -25%;
+}
+#rbt3:checked ~ .s1 {
+    margin-left: -50%;
+}
+#rbt4:checked ~ .s1 {
+    margin-left: -75%;
+}
+.text {
+    font-family: Inter;
+    font-size: 20px;
+    color: #fff;
+    font-style: normal;
+    position: absolute;
+    top: 685px;
+    visibility: hidden;
+}
+#rbt1:checked ~ .btn1 {
+    border: 2px solid #fff;
+    background-color:   rgb(33, 33, 34);
+}
+
+#rbt2:checked ~ .btn2 {
+    border: 2px solid #fff;
+    background-color:   rgb(33, 33, 34);
+}
+
+#rbt3:checked ~ .btn3 {
+    border: 2px solid #fff;
+    background-color:   rgb(33, 33, 34);
+}
+
+#rbt4:checked ~ .btn4 {
+    border: 2px solid #fff;
+    background-color:   rgb(33, 33, 34);
+}
+
+#rbt1:checked ~ .t1 {
+    visibility: visible;
+}
+#rbt2:checked ~ .t2 {
+    visibility: visible;
+}
+#rbt3:checked ~ .t3 {
+    visibility: visible;
+}
+#rbt4:checked ~ .t4 {
+    visibility: visible;
+}
+@media screen and (max-width: 1128px) {
+    .wrapper {
+        max-width: 680px;
+        height: 780px;
+    }
+    .btn1 {
+        position: absolute;
+        top: 680px;
+        left: 37%;
+    }
+    .btn2 {
+        position: absolute;
+        top: 680px;
+        left: 44%;
+    }
+    .btn3 {
+        position: absolute;
+        top: 680px;
+        left: 51%;
+    }
+    .btn4 {
+        position: absolute;
+        top: 680px;
+        left: 58%;
+    }
+    .text {
+        top: 720px;
+    }
+}
+@media screen and (max-width: 740px) {
+    .wrapper {
+        max-width: 480px;
+        height: 560px;
+    }
+    .slides {
+        margin-top: 40px;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        border: 5px solid #fff;
+    }
+    .box {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+    }
+    .box {
+        width: 400%;
+        height: 100%;
+        display: flex;
+    }
+    .img {
+        width: 100%;
+    }
+    .btn1 {
+        position: absolute;
+        top: 480px;
+        left: 30%;
+    }
+    .btn2 {
+        position: absolute;
+        top: 480px;
+        left: 41%;
+    }
+    .btn3 {
+        position: absolute;
+        top: 480px;
+        left: 52%;
+    }
+    .btn4 {
+        position: absolute;
+        top: 480px;
+        left: 63%;
+    }
+    .text {
+        top: 520px;
+    }
+}
