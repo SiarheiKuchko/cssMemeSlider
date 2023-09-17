@@ -7,16 +7,18 @@ body {
 }
 .wrapper {
     max-width: 1100px;
-    height: 700px;
+    height: 740px;
     background: rgb(33, 33, 34);
     border: 2px solid #000;
 }
 .position {
     display: flex;
+    position: relative;
     justify-content: center;
     margin: 40px auto;
 }
 .slides {
+    margin-top: 40px;
     width: 600px;
     height: 600px;
     overflow: hidden;
@@ -24,8 +26,8 @@ body {
 }
 .navi {
     position: absolute;
-    bottom: 36px;
-    left: 57%;
+    top: 680px;
+    left: 59%;
     display: flex;
 }
 .btn {
@@ -81,7 +83,7 @@ input[name="rbt"] {
     color: #fff;
     font-style: normal;
     position: absolute;
-    bottom: 40px;
+    top: 685px;
     visibility: hidden;
 }
 #rbt1:checked ~ .t1 {
