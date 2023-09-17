@@ -209,3 +209,52 @@ input[name="rbt"] {
         top: 720px;
     }
 }
+@media screen and (max-width: 740px) {
+    .wrapper {
+        max-width: 480px;
+        height: 560px;
+    }
+    .slides {
+        margin-top: 40px;
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        border: 5px solid #fff;
+    }
+    .box {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+    }
+    .box {
+        width: 400%;
+        height: 100%;
+        display: flex;
+    }
+    .img {
+        width: 100%;
+    }
+    .btn1 {
+        position: absolute;
+        top: 480px;
+        left: 30%;
+    }
+    .btn2 {
+        position: absolute;
+        top: 480px;
+        left: 41%;
+    }
+    .btn3 {
+        position: absolute;
+        top: 480px;
+        left: 52%;
+    }
+    .btn4 {
+        position: absolute;
+        top: 480px;
+        left: 63%;
+    }
+    .text {
+        top: 520px;
+    }
+}
