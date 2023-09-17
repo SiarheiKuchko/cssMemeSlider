@@ -15,7 +15,7 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
-    margin: 40px auto;
+    margin: auto;
 }
 .slides {
     margin-top: 40px;
@@ -24,28 +24,90 @@ body {
     overflow: hidden;
     border: 5px solid #fff;
 }
-.navi {
+.btn1 {
     position: absolute;
     top: 680px;
     left: 59%;
     display: flex;
-}
-.btn {
     height: 15px;
     width: 30px;
     margin: 10px;
     cursor: pointer;
-    border: 2px solid #fff;
-    background-color: #fff;
+    border: 2px solid #f10808;
+    background-color: #f10808;
     opacity: 0.5;
     border-radius: 10px;
 }
-.btn:hover {
+.btn1:hover {
     opacity: 1;
     border: 2px solid #fff;
-    background-color:  rgb(33, 33, 34);
+    background-color:  #fff;
     border-radius: 10px;
 }
+
+.btn2 {
+    position: absolute;
+    top: 680px;
+    left: 64%;
+    display: flex;
+    height: 15px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #f10808;
+    background-color: #f10808;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.btn2:hover {
+    opacity: 1;
+    border: 2px solid #fff;
+    background-color:  #fff;
+    border-radius: 10px;
+}
+
+.btn3 {
+    position: absolute;
+    top: 680px;
+    left: 69%;
+    display: flex;
+    height: 15px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #f10808;
+    background-color: #f10808;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.btn3:hover {
+    opacity: 1;
+    border: 2px solid #fff;
+    background-color:  #fff;
+    border-radius: 10px;
+}
+
+.btn4 {
+    position: absolute;
+    top: 680px;
+    left: 74%;
+    display: flex;
+    height: 15px;
+    width: 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid #f10808;
+    background-color: #f10808;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+.btn4:hover {
+    opacity: 1;
+    border: 2px solid #fff;
+    background-color:  #fff;
+    border-radius: 10px;
+}
+
 input[name="rbt"] {
     position: absolute;
     visibility: hidden;
@@ -86,6 +148,26 @@ input[name="rbt"] {
     top: 685px;
     visibility: hidden;
 }
+#rbt1:checked ~ .btn1 {
+    border: 2px solid #fff;
+    background-color:   rgb(33, 33, 34);
+}
+
+#rbt2:checked ~ .btn2 {
+    border: 2px solid #fff;
+    background-color:   rgb(33, 33, 34);
+}
+
+#rbt3:checked ~ .btn3 {
+    border: 2px solid #fff;
+    background-color:   rgb(33, 33, 34);
+}
+
+#rbt4:checked ~ .btn4 {
+    border: 2px solid #fff;
+    background-color:   rgb(33, 33, 34);
+}
+
 #rbt1:checked ~ .t1 {
     visibility: visible;
 }
@@ -97,4 +179,33 @@ input[name="rbt"] {
 }
 #rbt4:checked ~ .t4 {
     visibility: visible;
+}
+@media screen and (max-width: 1128px) {
+    .wrapper {
+        max-width: 680px;
+        height: 780px;
+    }
+    .btn1 {
+        position: absolute;
+        top: 680px;
+        left: 37%;
+    }
+    .btn2 {
+        position: absolute;
+        top: 680px;
+        left: 44%;
+    }
+    .btn3 {
+        position: absolute;
+        top: 680px;
+        left: 51%;
+    }
+    .btn4 {
+        position: absolute;
+        top: 680px;
+        left: 58%;
+    }
+    .text {
+        top: 720px;
+    }
 }
